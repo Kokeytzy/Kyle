@@ -1,0 +1,138 @@
+.page-sect {
+    display: flex;
+    flex-direction: column;
+
+
+    .content-card {
+        width: 840px;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+
+        img {
+            display: block;
+            height: 240px;
+            width: 240px;
+            margin: auto 30px;
+            border-radius: 100%;
+            object-fit: contain;
+            border: 9px solid #000080;
+            background-color: #FFD700;
+        }
+
+        .typography {
+            width: 400px;
+            padding: 20px;
+            text-align: justify;
+        }
+    }
+
+    .content-card:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+}
+
+
+.landing {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    position: relative;
+    background-image: linear-gradient(white, #ffd2f4);
+   
+
+    
+    .background-image {
+        position: absolute;
+        display: block;
+        background-color: darkblue;
+        height: 400px;
+        inset: 0;
+        z-index: 0;
+        width: 100vw;
+    } 
+
+
+    .content {
+        height: 400px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 400px;
+        justify-content: center;
+        text-align: center;
+        color: white;
+
+        a {
+            text-decoration: none;
+            color: rgb(6, 6, 161);
+            background-color: #FFD700;
+            font-size: 1.5rem;
+            padding: 12px 34px;
+            border-radius: 80px;
+            width: fit-content;
+            margin: 0px auto;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
+
+
+#nav-header {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    background-color: #FFD700;
+    height: fit-content;
+    padding: 30px;
+    display: flex;
+
+    nav {
+        margin: auto;
+        a {
+            text-decoration: none;
+            background-color: transparent;
+            color: rgb(6, 6, 161);
+            padding: 10px;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #F0F8FF;
+}
+
+.page-heading {
+    font-size: 3rem;
+    margin: 60px auto auto auto;
+}
+
+hr {
+    width: 90%;
+}
+
+* {
+    font-family: "Afacad Flux", sans-serif;
+    
+}
